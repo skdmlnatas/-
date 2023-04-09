@@ -19,4 +19,4 @@ batch 단위로 묶었더니 k 묶음이 나왔다. 각각의 묶음을 모두 �
 * train data: 훈련을 시키기 위해 사용하는 데이터 / validation data: epoch 한 번 돌 때마다 피팅 정도를 테스트하기 위해 하용하여 적절한 epoch 수를 잡는데 사용 /  test data: 훈련 다 끝난 후에 마지막 테스트 하기위해 사용하는 데이
 * 여기서도 epoch를 몇으로 잡을지 loss function을 보고 찾아야 하는데, 초반에는 에러가 확 줄어들 것이고, 그 뒷부분부터 확인하며 어디서 자르는 것이 좋을지 판단한다.<br>
 * 분류문제에서는 crossentropy, 회귀문제에서는 meansquererror를 loss function으로 사용한다.
-`#0969DA`
+* 데이터를 셔플링하며 k-겹 검증을 할 수도 있다.
